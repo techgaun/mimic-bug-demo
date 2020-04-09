@@ -1,18 +1,11 @@
 defmodule MimicBug do
-  @moduledoc """
-  Documentation for `MimicBug`.
-  """
+  def sum(a, b) do
+    Calc.add(a, b)
+  end
+end
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> MimicBug.hello()
-      :world
-
-  """
-  def hello do
-    :world
+defmodule Calc do
+  def add(a, b) do
+    a + b
   end
 end
